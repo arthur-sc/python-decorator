@@ -9,7 +9,7 @@ class Person:
     @property
     def idade(self):
         diferanca = datetime.strptime(self.dt_nasc, '%Y-%m-%d') - datetime.now()
-        return abs(diferanca.days / 365)
+        return abs(diferanca.days / 365) - 1
 
     @property
     def person(self):
